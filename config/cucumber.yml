@@ -1,0 +1,11 @@
+default: --format pretty
+html_report: --format pretty --format html --out=test_results.html
+
+chrome: DRIVER=chrome
+firefox: DRIVER=firefox
+iphone_6s_sim: DRIVER=ios PLATFORM_VERSION=9.3 DEVICE_NAME="iPhone 6s" BUNDLE_ID=com.apple.mobilesafari 
+iphone_6s_device: DRIVER=ios DEVICE_NAME="QAiPhone6sTQ" UDID=259264262ddaf5ad12f2080a6e3c582d84ac1364
+iphone_6_device: DRIVER=ios DEVICE_NAME="QAiPhone6tapQA" UDID=7f29f76b69e822834077ce10afd24a72a11d7cdd
+
+# https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/mobile-web.md
+# ios_webkit_debug_proxy -c 7f29f76b69e822834077ce10afd24a72a11d7cdd:27753
