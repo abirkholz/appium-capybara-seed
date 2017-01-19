@@ -9,58 +9,58 @@ as well as Chrome, Firefox, Safari, IE and Edge on the desktop.
 In order to use this repo, the environment must be setup properly.
 
 #### Mac OS X
-Instructions:
 1. Install [Xcode](https://developer.apple.com/xcode) if not already installed 
-2. Install [Xcode Command Line Tools](https://developer.apple.com/xcode/features) if not already installed
-3. Install [Homebrew](http://brew.sh) if not already installed
-4. Install [RVM](https://rvm.io/rvm/install) if not already installed
-5. Install [Node.js](https://nodejs.org) if not already installed (use homebrew to install)
-6. Configure ruby version and install global gems:
-```bash
-# Install ruby-2.3.3 to RVM
-rvm install ruby -v 2.3.3
+2. Install [Xcode Command Line Tools](https://developer.apple.com/xcode/features) if not already installed 
+3. Install [Homebrew](http://brew.sh) if not already installed 
+4. Install [RVM](https://rvm.io/rvm/install) if not already installed 
+5. Install [Node.js](https://nodejs.org) if not already installed (use homebrew to install) 
+6. Configure ruby version and install global gems: 
+  ```bash
+  # Install ruby-2.3.3 to RVM
+  rvm install ruby -v 2.3.3
 
-# Set ruby-2.3.3 as the ruby version and verify it is set
-rvm use 2.3.3 && ruby -v
+  # Set ruby-2.3.3 as the ruby version and verify it is set
+  rvm use 2.3.3 && ruby -v
 
-# Install bundler gem (in order to execute 'bundle install' from CLI)
-gem install bundler
-```
-7. Install [ChromeDriver](https://sites.google.com/a/chromium.org/chromedriver/) for Google Chrome using homebrew:
-```bash
-# Install chromedriver
-brew install chromedriver
+  # Install bundler gem (in order to execute 'bundle install' from CLI)
+  gem install bundler
+  ```
+7. Install [ChromeDriver](https://sites.google.com/a/chromium.org/chromedriver/) for Google Chrome using homebrew: 
+  ```bash
+  # Install chromedriver
+  brew install chromedriver
 
-# Verify chromedriver has been installed 
-chromedriver -v
-```
-8. Install [geckodriver](https://github.com/mozilla/geckodriver) for Mozilla Firefox using homebrew
-```bash
-# Install geckodriver
-brew install geckodriver
+  # Verify chromedriver has been installed 
+  chromedriver -v
+  ``` 
+8. Install [geckodriver](https://github.com/mozilla/geckodriver) for Mozilla Firefox using homebrew 
+  ```bash
+  # Install geckodriver
+  brew install geckodriver
 
-# Verify geckodriver has been installed
-geckodriver --version
-```
-9. Install [appium](http://appium.io) as a global node module
-```bash
-# Install appium to system nodejs
-node install -g appium
+  # Verify geckodriver has been installed
+  geckodriver --version
+  ``` 
+9. Install [appium](http://appium.io) as a global node module 
+  ```bash
+  # Install appium to system nodejs
+  node install -g appium
 
-# Verify appium has been installed
-appium -v
+  # Verify appium has been installed
+  appium -v
 
-#Install optional appium dependencies
-brew install carthage
-brew install appium-doctor
-```
-10. Install [ios_webkit_debug_proxy](http://appium.io/slate/en/master/?ruby#ios-webkit-debug-proxy) with  homebrew
-```bash
-# brew install --HEAD libimobiledevice
-brew install ios-webkit-debug-proxy
-# turn on the web inspector on iOS device (settings > safari > advanced)
-# start proxy: ios_webkit_debug_proxy -c <DEVICE_UDID>:27753 -d
-```
+  #Install optional appium dependencies
+  brew install carthage
+  brew install appium-doctor
+  ```
+10. Install [ios_webkit_debug_proxy](http://appium.io/slate/en/master/?ruby#ios-webkit-debug-proxy) with  homebrew 
+  ```bash
+  # brew install --HEAD libimobiledevice
+  brew install ios-webkit-debug-proxy
+  # turn on the web inspector on iOS device (settings > safari > advanced)
+  # start proxy: ios_webkit_debug_proxy -c <DEVICE_UDID>:27753 -d
+  ```
+
 ## Run Tests
 ``` bash
 # Start appium server 
