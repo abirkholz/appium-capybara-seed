@@ -18,7 +18,7 @@ As of right now, the instructions are for Mac OSX but I will provide Windows set
 3. Install [Homebrew](http://brew.sh) if not already installed
 4. Install [RVM](https://rvm.io/rvm/install) if not already installed (don't need RVM but it is recommended)
 5. Install [NVM](https://github.com/creationix/nvm) if not already installed (don't need NVM but it is recommended)
-6. Configure ruby version and install global gems:
+6. Configure ruby version and install global gems: 
   ```bash
   # Install ruby-2.3.3 to RVM
   $ rvm install ruby -v 2.3.3
@@ -83,6 +83,7 @@ As of right now, the instructions are for Mac OSX but I will provide Windows set
 12. Update cucumber.yml to match your devices and simulator versions:
   - iOS devices - change UDID to the UDID of your device (find in iTunes when device is connected)
   - iOS simulators - change DEVICE_NAME and PLATFORM_VERSION to match the sims on your computer. 
+
 #### Windows 
 > TODO
 
