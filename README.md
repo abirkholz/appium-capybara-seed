@@ -86,8 +86,9 @@ In order to use this project, the environment must be configured with necessary 
   - iOS simulators - change DEVICE_NAME and PLATFORM_VERSION to match the sims on your computer.
 
 #### Windows
-These set-up instructions detail the necessary steps only for what this project currently supports on Windows: Chrome and Firefox
-1. Install [scoop](http://scoop.sh/), the closest thing to homebrew for Windows
+These set-up instructions detail the necessary steps only for what this project currently supports on Windows (Chrome and Firefox):
+
+1. Install [scoop](http://scoop.sh/), the closest thing to homebrew for Windows 
 2. Install [ruby 2.3.3](https://dl.bintray.com/oneclick/rubyinstaller/rubyinstaller-2.3.3-x64.exe) or higher
 3. Install [ruby devkit](https://dl.bintray.com/oneclick/rubyinstaller/DevKit-mingw64-64-4.7.2-20130224-1432-sfx.exe) and follow the instructions [here](https://github.com/oneclick/rubyinstaller/wiki/Development-Kit) for set-up
 4. Install ChromeDriver:
@@ -99,7 +100,7 @@ These set-up instructions detail the necessary steps only for what this project 
   - `bundle lock`
   - `bundle install`
 
--> TODO: Add install instructions for IEDriver and/or EdgeDriver   
+> TODO: Add install instructions for IEDriver and/or EdgeDriver   
 
 ## Run Tests
 
